@@ -1,4 +1,40 @@
-html{
-    font-family: IBM Plex Mono;
+:root {
+  --app-font: "Oswald", sans-serif;
+}
+html, body{
+  font-family: var(--app-font); ;
+  /* font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal; */
 }
 
+
+/* UIkit overrides (targets components that set their own font rules) */
+.uk-navbar,
+.uk-navbar * {
+  font-family: var(--app-font);
+}
+
+.uk-card,
+.uk-card * {
+  font-family: var(--app-font);
+}
+
+.uk-button,
+.uk-button-text,
+.uk-logo {
+  font-family: "Oswald";
+  font-weight: 600;
+  font-style: normal
+}
+
+.uk-text-capitalize,
+.uk-button-text {
+    font-family: var(--app-font);
+}
+
+/* Optional: headings (in case you want consistent weights) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--app-font);
+  font-weight: 600;
+}
